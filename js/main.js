@@ -42,8 +42,8 @@ $btnBounce.on('click', function (){
 	//$circle.removeClass('js-circle-bounce');
 //})
 
-$circle.on('animationend', function(){
-	circle.removeClass('js-circle-bounce');
+$circle.on('webkitAnimationEnd animationend', function(){
+	$circle.removeClass('js-circle-bounce');
 });
 
 $btnAppend.on('click', function(){
