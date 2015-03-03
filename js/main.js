@@ -9,9 +9,6 @@ var $circle = $('.circle');
 var $btnAppend = $('.btn-append');
 var $list = $('.list');
 
-
-
-
 $btnShowHide.on('click', function (){
 	$box.toggleClass('js-btn-show-hide');
 	//console.log ('btnShowHide');
@@ -20,7 +17,6 @@ $btnShowHide.on('click', function (){
 $btnMove.on('click', function () {
 		$diamond.toggleClass('js-diamond');
 });
-
 
 $btnCollapseExpand.on('click', function () {
 		$panel.toggleClass('js-panel');
@@ -33,8 +29,6 @@ $btnBounce.on('click', function (){
 $circle.on('animationend', function(){
 	$circle.removeClass('js-circle-bounce');
 })
-
-
 
 $btnAppend.on('click', function(){
 	var $li = $('<li>');

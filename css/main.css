@@ -86,7 +86,28 @@ div {
 }
 
 .js-circle-bounce {
+  @-webkit-animation: circle-bounce 1.5s linear;
   animation: circle-bounce 1.5s linear;
+}
+
+@-webkit-keyframes circle-bounce {
+
+0%{
+   top: calc(50% - 50px);
+   right: 2rem;
+  }
+  40% {
+    top: calc(50% - 40px);
+    right: 3rem;
+  }
+  60% {
+    top: calc(50% - 60px);
+    right:4rem;
+  }
+  100% {
+    top: calc(50% - 40px);
+    right: 5rem;
+  }
 }
 
 @keyframes circle-bounce  {
@@ -95,17 +116,14 @@ div {
    top: calc(50% - 50px);
    right: 2rem;
   }
-
   40% {
     top: calc(50% - 40px);
     right: 3rem;
   }
-
   60% {
     top: calc(50% - 60px);
     right:4rem;
   }
-
   100% {
     top: calc(50% - 40px);
     right: 5rem;
@@ -126,16 +144,23 @@ div {
 }
 
 .js-list-down{
+  @-webkit-animation: drop-down 100ms linear;
   animation: drop-down 100ms linear;
+}
+
+@-webkit-@keyframes drop-down {
+  0% {
+    max-height:0;
+  }
+  100% {
+    max-height: 38px;
+  }
 }
 
 @keyframes drop-down {
   0% {
     max-height:0;
   }
-
-
-
   100% {
     max-height: 38px;
   }
