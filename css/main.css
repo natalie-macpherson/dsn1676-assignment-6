@@ -144,8 +144,8 @@ div {
 }
 
 .js-list-down{
-  -webkit-animation: drop-down 100ms linear;
-  animation: drop-down 100ms linear;
+  -webkit-animation: drop-down 250ms linear;
+  animation: drop-down 250ms linear;
 }
 
 @-webkit-keyframes drop-down {
