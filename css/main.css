@@ -13,7 +13,7 @@ body {
 section {
   padding: 4em 1em;
   position: relative;
-
+  overflow: hidden;
   border-bottom: 1px solid #ccc;
 }
 
@@ -31,41 +31,57 @@ div {
   height: 100px;
   top: calc(50% - 50px);
   width: 200px;
-
   background-color: limegreen;
+  transition: all 500ms ease-in-out;
+  opacity: 0;
+}
+
+.js-btn-show-hide {
+  opacity: 1;
 }
 
 .diamond {
   height: 80px;
-  right: 2em;
+  right: -10em;
   top: calc(50% - 40px);
   width: 80px;
-
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: all 500ms linear;
+}
+
+.js-diamond {
+  right: 3em;
 }
 
 .panel {
   width: 250px;
   top: 50%;
-
+  max-height: 0;
+  overflow: hidden;
   background-color: yellow;
   transform: translateY(-50%);
-
+  transition: all 500ms ease-out;
   color: darkgoldenrod;
   text-align: center;
+
+}
+
+.js-panel {
+  max-height: 250px;
 }
 
 .panel h2 {
   margin: 0;
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 .circle {
   height: 100px;
   top: calc(50% - 50px);
   width: 100px;
-
+  border-radius: 50%;
   background-color: orange;
 }
 
