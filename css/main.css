@@ -86,7 +86,7 @@ div {
 }
 
 .js-circle-bounce {
-  @-webkit-animation: circle-bounce 1.5s linear;
+  -webkit-animation: circle-bounce 1.5s linear;
   animation: circle-bounce 1.5s linear;
 }
 
@@ -144,11 +144,11 @@ div {
 }
 
 .js-list-down{
-  @-webkit-animation: drop-down 100ms linear;
+  -webkit-animation: drop-down 100ms linear;
   animation: drop-down 100ms linear;
 }
 
-@-webkit-@keyframes drop-down {
+@-webkit-keyframes drop-down {
   0% {
     max-height:0;
   }
