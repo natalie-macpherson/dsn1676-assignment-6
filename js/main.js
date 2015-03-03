@@ -43,7 +43,7 @@ $btnBounce.on('click', function (){
 //})
 
 $circle.on('animationend', function(){
-	console.log('animation finished');
+	circle.removeClass('js-circle-bounce');
 });
 
 $btnAppend.on('click', function(){
