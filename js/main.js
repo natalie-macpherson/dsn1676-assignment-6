@@ -26,22 +26,6 @@ $btnBounce.on('click', function (){
 	$circle.addClass('js-circle-bounce');
 });
 
-//$btnBounce.on('click', function () {
-  //$circle.removeClass('js-circle-bounce');
-//});
-
-//$btnBounce.on('webkitAnimationEnd animationend', function () {
-  //$circle.removeClass('js-circle-bounce');
-//});
-
-//$btnBounce.on('click', function (){
-	//$circle.removeClass('js-circle-bounce');
-//});
-
-//$circle.on('animationend', function(){
-	//$circle.removeClass('js-circle-bounce');
-//})
-
 $circle.on('webkitAnimationEnd animationend', function(){
 	$circle.removeClass('js-circle-bounce');
 });
